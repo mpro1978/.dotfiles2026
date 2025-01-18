@@ -4,8 +4,8 @@ export PATH="$HOME/bin:$PATH";
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,.sudo_as_admin_successful,bash_prompt,exports,aliases,functions,extra,.tmuxtheme.sh,.tmux.conf}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+for file in ~/.{path,.sudo_as_admin_successful,bash_prompt,exports,aliases,functions,extra,tmux}; 
+do [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
